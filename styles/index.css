@@ -1,0 +1,17 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+#menu-toggle:checked + #menu {
+  display: block;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  top: 0;
+  position: absolute;
+  align-items: center;
+  margin-top: 4.25rem;
+  padding: 0;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
