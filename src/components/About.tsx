@@ -9,10 +9,10 @@ const About = () => {
       <img
         src='/home.jpg'
         alt='Picture of Josh and his dog Finn'
-        className='block mx-auto px-10 sm:px-16 w-full sm:max-w-6xl py-12'
+        className='block mx-auto px-10 md:px-24 w-full sm:max-w-6xl py-12'
       />
       <div className='flex justify-center items-center'>
-        <p className='w-full text-justify sm:max-w-6xl mx-auto px-10 sm:px-16 font-sans'>
+        <p className='w-full text-justify sm:max-w-6xl mx-auto px-10 md:px-24 font-sans'>
           Full Stack Software Engineer with a passion for creative and innovated solutions for complex problems with a focus on clean and efficient code. Self-motivated in striving to learn new languages and frameworks to remain agile. I enjoy making, breaking, and making web things more efficient. Dedicated to making an impact in the world, and influencing society through technology.
         </p>
       </div>
