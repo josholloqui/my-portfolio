@@ -26,8 +26,8 @@
       "@images/*": [
         "src/images/*"
       ],
-      "@hooks/*": [
-        "src/hooks/*"
+      "@declarations/*": [
+        "src/declarations/*"
       ]
     },
     "allowJs": true,
