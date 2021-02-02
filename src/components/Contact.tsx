@@ -61,7 +61,7 @@ const Contact = () => {
   return (
     <section>
       <div>
-        <h1 className='pt-16 pb-4 text-center text-4xl font-medium' >Contact me</h1>
+        <h1 className='pt-16 pb-4 text-center text-4xl font-medium font-serif' >Contact me</h1>
       </div>
       <form
         onSubmit={handleSubmit}
