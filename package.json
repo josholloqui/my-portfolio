@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.0",
+    "@sendgrid/mail": "^7.4.2",
     "autoprefixer": "^9",
     "cssnano": "^4.1.10",
     "next": "10.0.5",

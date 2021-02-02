@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className='md:px-6 px-6 bg-white flex flex-wrap items-center md:py-0 py-2 shadow-default'>
       <div className='flex flex-wrap items-start md:items-center'>
-        <a href='#'>
+        <a href='/'>
           <img src='/JoshLogo.svg' width='40' />
         </a>
       </div>
@@ -16,7 +16,7 @@ const Header = () => {
             <li><a className='md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 font-sans font-medium text-black' href='#'>ABOUT</a></li>
             <li><a className='md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 font-sans font-medium text-black' href='#'>PROJECTS</a></li>
             <li><a className='md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 font-sans font-medium text-black' href='#'>BLOG</a></li>
-            <li><a className='md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 md:mb-0 mb-2 font-sans font-medium text-black' href='#'>CONTACT</a></li>
+            <li><a className='md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 md:mb-0 mb-2 font-sans font-medium text-black' href='/contact'>CONTACT</a></li>
           </ul>
         </nav>
 
