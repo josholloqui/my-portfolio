@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'media',
   important: false,
   prefix: '',
   important: false,

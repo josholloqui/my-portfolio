@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const MiniNav = () => {
   return (
@@ -6,16 +7,24 @@ const MiniNav = () => {
       <nav>
         <ul>
           <li className='pb-3'>
-            <a href='/' className='text-white text-3xl md:text-2xl font-medium hover:underline'>About</a>
+            <Link href='/'>
+              <a className='text-white text-3xl md:text-2xl font-medium hover:underline'>About</a>
+            </Link>
           </li>
           <li className='pb-3'>
-            <a href='/projects' className='text-white text-3xl md:text-2xl font-medium hover:underline'>Projects</a>
+            <Link href='/projects'>
+              <a className='text-white text-3xl md:text-2xl font-medium hover:underline'>Projects</a>
+            </Link>
           </li>
           <li className='pb-3'>
-            <a href='/blog' className='text-white text-3xl md:text-2xl font-medium hover:underline'>Blog</a>
+            <Link href='/blog'>
+              <a className='text-white text-3xl md:text-2xl font-medium hover:underline'>Blog</a>
+            </Link>
           </li>
           <li className='pb-3'>
-            <a href='/contact' className='text-white text-3xl md:text-2xl font-medium hover:underline'>Contact</a>
+            <Link href='/contact'>
+              <a className='text-white text-3xl md:text-2xl font-medium hover:underline'>Contact</a>
+            </Link>
           </li>
         </ul>
       </nav>

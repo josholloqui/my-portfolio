@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const Header = () => {
+  const router = useRouter()
   return (
-    <header className='md:px-6 px-6 bg-white flex flex-wrap items-center md:py-0 py-2 shadow-default'>
+    <header className='md:px-6 px-6 bg-white flex flex-wrap items-center md:py-0 py-2 shadow-default w-full'>
       <div className='flex flex-wrap items-start md:items-center'>
         <Link href='/'>
           <a>
@@ -18,22 +20,22 @@ const Header = () => {
           <ul className='md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0'>
             <li>
               <Link href='/'>
-                <a className='md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 font-sans font-normal text-black'>About</a>
+                <a className={`md:p-4 py-3 px-0 block border-b-2 ${router.pathname === '/' ? 'border-indigo-400' : 'border-transparent'}  font-sans font-normal text-black`}>About</a>
               </Link>
             </li>
             <li>
               <Link href='#'>
-                <a className='md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 font-sans font-normal text-black'>Projects</a>
+                <a className={`md:p-4 py-3 px-0 block border-b-2 ${router.pathname.includes('projects') ? 'border-indigo-400' : 'border-transparent'} font-sans font-normal text-black`}>Projects</a>
               </Link>
             </li>
             <li>
-              <Link href='#'>
-                <a className='md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 font-sans font-normal text-black'>Blog</a>
+              <Link href='/blog'>
+                <a className={`md:p-4 py-3 px-0 block border-b-2 ${router.pathname.includes('log') ? 'border-indigo-400' : 'border-transparent'} font-sans font-normal text-black`}>Blog</a>
               </Link>
             </li>
             <li>
               <Link href='/contact'>
-                <a className='md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 md:mb-0 mb-2 font-sans font-normal text-black' >Contact</a>
+                <a className={`md:p-4 py-3 px-0 block border-b-2 ${router.pathname.includes('contact') ? 'border-indigo-400' : 'border-transparent'} md:mb-0 mb-2 font-sans font-normal text-black`} >Contact</a>
               </Link>
             </li>
           </ul>
